@@ -1,6 +1,6 @@
 Basic lab for helping to learn new concepts in java.time
 
-- Solutions have been removed, but can be found in this commit: 481a59e457
+Solutions have been removed, but can be found in this commit: 481a59e457a154cbaa7d3aadaa843bab5c7c9db5
 
 To get the example up and running use your favourite IDE and run the unit tests.
 
