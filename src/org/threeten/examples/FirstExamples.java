@@ -6,30 +6,28 @@ public class FirstExamples {
 
     //Create a simple Date - Henry VIII Birthday - June 28th 1491
     public LocalDate getHenrysBirthday() {
-        return LocalDate.of(1491, Month.JUNE, 28);
+        return null;
     }
 
     //Create a simple Time - 13:51
     public LocalTime getSampleLocalTime() {
-        return LocalTime.of(13, 51);
+        return null;
     }
 
     //Create a sample LocalDateTime of the above
     public LocalDateTime getSampleLocalDateTime() {
-        return LocalDateTime.of(1491, Month.JUNE, 28, 13, 51);
+        return null;
     }
 
     public LocalDateTime getComponentDateTime() {
-        return LocalDateTime.of(getHenrysBirthday(), getSampleLocalTime());
+        return null;
     }
 
     public LocalDate getTodayFromLocalDateTime() {
-        return LocalDateTime.now().toLocalDate();
+        return null;
     }
 
     public int getDifferenceBetweenParisAndLondon() {
-        ZonedDateTime paris = ZonedDateTime.now(ZoneId.of("Europe/Paris"));
-        ZonedDateTime london = ZonedDateTime.now(ZoneId.of("Europe/London"));
-        return paris.getHour() - london.getHour();
+        return 0;
     }
 }

@@ -11,56 +11,27 @@ import java.util.stream.Stream;
 public class SecondExamples {
 
     public boolean isTodayAfterTomorrow() {
-        LocalDate today = LocalDate.now();
-        LocalDate tomorrow = today.plusDays(1);
-        return tomorrow.isAfter(today);
+        return false;
     }
 
     public DayOfWeek getLastDayOfMonth() {
-        return LocalDate.now().with(TemporalAdjusters.lastDayOfMonth()).getDayOfWeek();
+        return null;
     }
 
     //Longest day of year June 21st
     public int howManyDaysUntilLongestDayOfTheYear() {
-        LocalDate today = LocalDate.now();
-        LocalDate longestDay = today.with(Month.JUNE).withDayOfMonth(21);
-        return Period.between(today, longestDay).getDays();
+        return 0;
     }
 
     public Duration howLongUntilNewYear() {
-        ZonedDateTime here = ZonedDateTime.now(ZoneId.of("America/Los_Angeles"));
-        ZonedDateTime gmtNewYear = ZonedDateTime.of(2014, 12, 31, 23, 59, 59, 0, ZoneId.of("Europe/London"));
-
-        return Duration.between(here, gmtNewYear);
+        return null;
     }
 
     public LocalDate createDateFromJavaUtilDate() {
-        return new Date().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+        return null;
     }
 
     public List<DayOfWeek> lastDaysOfMonthsInYear(int year) {
-//        List<DayOfWeek> list = new ArrayList<>();
-//
-//        for(Month month : Month.values()) {
-//            DayOfWeek day = LocalDate.now().withYear(year)
-//                    .with(month).with(TemporalAdjusters.lastDayOfMonth()).getDayOfWeek();
-//
-//            list.add(day);
-//        }
-//
-//
-//        return list;
-
-       return Stream.of(Month.values()).map(month -> LocalDate.now()
-                    .withYear(year)
-                    .with(month)
-                    .with(TemporalAdjusters.lastDayOfMonth()).getDayOfWeek())
-                .collect(Collectors.toList());
-
-        //1. Months
-
-        //2. Apply a transformation
-
-        //3. Collect into a list
+        return null;
     }
 }

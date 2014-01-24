@@ -14,20 +14,6 @@ public class NextMartinLutherKingDayQuery implements TemporalQuery<LocalDate> {
 
     @Override
     public LocalDate queryFrom(TemporalAccessor temporal) {
-        LocalDate date = LocalDate.from(temporal);
-        LocalDate currentYearMLKDay = getMartinLutherKingDayForDateInYear(date.getYear());
-
-        Period periodToCurrentYearMLKDay = Period.between(date, currentYearMLKDay);
-
-        if(periodToCurrentYearMLKDay.isNegative() || periodToCurrentYearMLKDay.isZero()) {
-            return getMartinLutherKingDayForDateInYear(date.getYear() + 1);
-        } else {
-            return currentYearMLKDay;
-        }
-    }
-
-    private LocalDate getMartinLutherKingDayForDateInYear(int year ) {
-        return LocalDate.of(year, JANUARY, 1)
-                .with(TemporalAdjusters.dayOfWeekInMonth(3, MONDAY));
+        return null;
     }
 }
